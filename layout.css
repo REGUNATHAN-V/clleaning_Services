@@ -1,0 +1,41 @@
+/* Layout styles */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0rem 5%;
+    padding-bottom: 5rem;
+}
+
+.testimonial-card p{
+    font-style: italic;
+    text-shadow: 3px 5px 3px rgba(0, 0, 0, 0.377);
+}
+/* .pricing{
+    background-color: blueviolet;
+} */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+.process-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+@media (max-width: 768px) {
+    .testimonial-grid,
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-process {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
